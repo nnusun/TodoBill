@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A442DA941AD25D2800724EF9 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = A442DA8B1AD25D2800724EF9 /* FMDatabase.m */; };
+		A442DA951AD25D2800724EF9 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = A442DA8D1AD25D2800724EF9 /* FMResultSet.m */; };
+		A442DA961AD25D2800724EF9 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A442DA8F1AD25D2800724EF9 /* FMDatabaseQueue.m */; };
+		A442DA971AD25D2800724EF9 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A442DA911AD25D2800724EF9 /* FMDatabaseAdditions.m */; };
+		A442DA981AD25D2800724EF9 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = A442DA931AD25D2800724EF9 /* FMDatabasePool.m */; };
 		A4AA8D521AD25929003F964E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AA8D511AD25929003F964E /* AppDelegate.swift */; };
 		A4AA8D541AD25929003F964E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AA8D531AD25929003F964E /* ViewController.swift */; };
 		A4AA8D571AD25929003F964E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4AA8D551AD25929003F964E /* Main.storyboard */; };
@@ -26,6 +31,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A442DA881AD25D2800724EF9 /* TodoBill-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TodoBill-Bridging-Header.h"; sourceTree = "<group>"; };
+		A442DA891AD25D2800724EF9 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		A442DA8A1AD25D2800724EF9 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		A442DA8B1AD25D2800724EF9 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		A442DA8C1AD25D2800724EF9 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		A442DA8D1AD25D2800724EF9 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		A442DA8E1AD25D2800724EF9 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		A442DA8F1AD25D2800724EF9 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		A442DA901AD25D2800724EF9 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		A442DA911AD25D2800724EF9 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		A442DA921AD25D2800724EF9 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		A442DA931AD25D2800724EF9 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
 		A4AA8D4C1AD25929003F964E /* TodoBill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoBill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4AA8D501AD25929003F964E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4AA8D511AD25929003F964E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +73,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A442DA871AD25CCD00724EF9 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				A442DA891AD25D2800724EF9 /* FMDB.h */,
+				A442DA8A1AD25D2800724EF9 /* FMDatabase.h */,
+				A442DA8B1AD25D2800724EF9 /* FMDatabase.m */,
+				A442DA8C1AD25D2800724EF9 /* FMResultSet.h */,
+				A442DA8D1AD25D2800724EF9 /* FMResultSet.m */,
+				A442DA8E1AD25D2800724EF9 /* FMDatabaseQueue.h */,
+				A442DA8F1AD25D2800724EF9 /* FMDatabaseQueue.m */,
+				A442DA901AD25D2800724EF9 /* FMDatabaseAdditions.h */,
+				A442DA911AD25D2800724EF9 /* FMDatabaseAdditions.m */,
+				A442DA921AD25D2800724EF9 /* FMDatabasePool.h */,
+				A442DA931AD25D2800724EF9 /* FMDatabasePool.m */,
+				A442DA881AD25D2800724EF9 /* TodoBill-Bridging-Header.h */,
+			);
+			name = FMDB;
+			sourceTree = "<group>";
+		};
 		A4AA8D431AD25929003F964E = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +113,7 @@
 		A4AA8D4E1AD25929003F964E /* TodoBill */ = {
 			isa = PBXGroup;
 			children = (
+				A442DA871AD25CCD00724EF9 /* FMDB */,
 				A4AA8D511AD25929003F964E /* AppDelegate.swift */,
 				A4AA8D531AD25929003F964E /* ViewController.swift */,
 				A4AA8D551AD25929003F964E /* Main.storyboard */,
@@ -212,8 +249,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A442DA961AD25D2800724EF9 /* FMDatabaseQueue.m in Sources */,
+				A442DA941AD25D2800724EF9 /* FMDatabase.m in Sources */,
 				A4AA8D541AD25929003F964E /* ViewController.swift in Sources */,
+				A442DA951AD25D2800724EF9 /* FMResultSet.m in Sources */,
+				A442DA981AD25D2800724EF9 /* FMDatabasePool.m in Sources */,
 				A4AA8D521AD25929003F964E /* AppDelegate.swift in Sources */,
+				A442DA971AD25D2800724EF9 /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,9 +380,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TodoBill/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TodoBill/TodoBill-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -348,9 +393,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TodoBill/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TodoBill/TodoBill-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -407,6 +454,7 @@
 				A4AA8D6D1AD25929003F964E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A4AA8D6E1AD25929003F964E /* Build configuration list for PBXNativeTarget "TodoBillTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +463,7 @@
 				A4AA8D701AD25929003F964E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
