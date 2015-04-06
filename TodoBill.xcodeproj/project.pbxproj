@@ -12,6 +12,7 @@
 		A442DA961AD25D2800724EF9 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A442DA8F1AD25D2800724EF9 /* FMDatabaseQueue.m */; };
 		A442DA971AD25D2800724EF9 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A442DA911AD25D2800724EF9 /* FMDatabaseAdditions.m */; };
 		A442DA981AD25D2800724EF9 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = A442DA931AD25D2800724EF9 /* FMDatabasePool.m */; };
+		A442DA9C1AD2619300724EF9 /* BillDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = A442DA9B1AD2619300724EF9 /* BillDB.swift */; };
 		A4AA8D521AD25929003F964E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AA8D511AD25929003F964E /* AppDelegate.swift */; };
 		A4AA8D541AD25929003F964E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AA8D531AD25929003F964E /* ViewController.swift */; };
 		A4AA8D571AD25929003F964E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4AA8D551AD25929003F964E /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 		A442DA911AD25D2800724EF9 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
 		A442DA921AD25D2800724EF9 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
 		A442DA931AD25D2800724EF9 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		A442DA9B1AD2619300724EF9 /* BillDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillDB.swift; sourceTree = "<group>"; };
 		A4AA8D4C1AD25929003F964E /* TodoBill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoBill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4AA8D501AD25929003F964E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4AA8D511AD25929003F964E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +94,14 @@
 			name = FMDB;
 			sourceTree = "<group>";
 		};
+		A442DA9A1AD25DC600724EF9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A442DA9B1AD2619300724EF9 /* BillDB.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		A4AA8D431AD25929003F964E = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +123,7 @@
 		A4AA8D4E1AD25929003F964E /* TodoBill */ = {
 			isa = PBXGroup;
 			children = (
+				A442DA9A1AD25DC600724EF9 /* Model */,
 				A442DA871AD25CCD00724EF9 /* FMDB */,
 				A4AA8D511AD25929003F964E /* AppDelegate.swift */,
 				A4AA8D531AD25929003F964E /* ViewController.swift */,
@@ -249,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A442DA9C1AD2619300724EF9 /* BillDB.swift in Sources */,
 				A442DA961AD25D2800724EF9 /* FMDatabaseQueue.m in Sources */,
 				A442DA941AD25D2800724EF9 /* FMDatabase.m in Sources */,
 				A4AA8D541AD25929003F964E /* ViewController.swift in Sources */,
