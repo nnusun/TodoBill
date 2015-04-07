@@ -13,6 +13,11 @@
 		A442DA971AD25D2800724EF9 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A442DA911AD25D2800724EF9 /* FMDatabaseAdditions.m */; };
 		A442DA981AD25D2800724EF9 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = A442DA931AD25D2800724EF9 /* FMDatabasePool.m */; };
 		A442DA9C1AD2619300724EF9 /* BillDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = A442DA9B1AD2619300724EF9 /* BillDB.swift */; };
+		A442DAA01AD3F5E200724EF9 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A442DA9F1AD3F5E200724EF9 /* AccountModel.swift */; };
+		A442DAA21AD3F96100724EF9 /* InOutTypeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A442DAA11AD3F96100724EF9 /* InOutTypeModel.swift */; };
+		A442DAA41AD404DB00724EF9 /* InOutModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A442DAA31AD404DB00724EF9 /* InOutModel.swift */; };
+		A442DAA71AD40C4500724EF9 /* BillController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A442DAA61AD40C4500724EF9 /* BillController.swift */; };
+		A442DAA91AD417BB00724EF9 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A442DAA81AD417BA00724EF9 /* libsqlite3.dylib */; };
 		A4AA8D521AD25929003F964E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AA8D511AD25929003F964E /* AppDelegate.swift */; };
 		A4AA8D541AD25929003F964E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AA8D531AD25929003F964E /* ViewController.swift */; };
 		A4AA8D571AD25929003F964E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4AA8D551AD25929003F964E /* Main.storyboard */; };
@@ -45,6 +50,11 @@
 		A442DA921AD25D2800724EF9 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
 		A442DA931AD25D2800724EF9 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
 		A442DA9B1AD2619300724EF9 /* BillDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillDB.swift; sourceTree = "<group>"; };
+		A442DA9F1AD3F5E200724EF9 /* AccountModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
+		A442DAA11AD3F96100724EF9 /* InOutTypeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InOutTypeModel.swift; sourceTree = "<group>"; };
+		A442DAA31AD404DB00724EF9 /* InOutModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InOutModel.swift; sourceTree = "<group>"; };
+		A442DAA61AD40C4500724EF9 /* BillController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillController.swift; sourceTree = "<group>"; };
+		A442DAA81AD417BA00724EF9 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		A4AA8D4C1AD25929003F964E /* TodoBill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoBill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4AA8D501AD25929003F964E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4AA8D511AD25929003F964E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A442DAA91AD417BB00724EF9 /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,13 +109,25 @@
 			isa = PBXGroup;
 			children = (
 				A442DA9B1AD2619300724EF9 /* BillDB.swift */,
+				A442DA9F1AD3F5E200724EF9 /* AccountModel.swift */,
+				A442DAA11AD3F96100724EF9 /* InOutTypeModel.swift */,
+				A442DAA31AD404DB00724EF9 /* InOutModel.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		A442DAA51AD40BD600724EF9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A442DAA61AD40C4500724EF9 /* BillController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		A4AA8D431AD25929003F964E = {
 			isa = PBXGroup;
 			children = (
+				A442DAA81AD417BA00724EF9 /* libsqlite3.dylib */,
 				A4AA8D4E1AD25929003F964E /* TodoBill */,
 				A4AA8D641AD25929003F964E /* TodoBillTests */,
 				A4AA8D4D1AD25929003F964E /* Products */,
@@ -123,6 +146,7 @@
 		A4AA8D4E1AD25929003F964E /* TodoBill */ = {
 			isa = PBXGroup;
 			children = (
+				A442DAA51AD40BD600724EF9 /* Controller */,
 				A442DA9A1AD25DC600724EF9 /* Model */,
 				A442DA871AD25CCD00724EF9 /* FMDB */,
 				A4AA8D511AD25929003F964E /* AppDelegate.swift */,
@@ -262,11 +286,15 @@
 			files = (
 				A442DA9C1AD2619300724EF9 /* BillDB.swift in Sources */,
 				A442DA961AD25D2800724EF9 /* FMDatabaseQueue.m in Sources */,
+				A442DAA71AD40C4500724EF9 /* BillController.swift in Sources */,
 				A442DA941AD25D2800724EF9 /* FMDatabase.m in Sources */,
 				A4AA8D541AD25929003F964E /* ViewController.swift in Sources */,
 				A442DA951AD25D2800724EF9 /* FMResultSet.m in Sources */,
 				A442DA981AD25D2800724EF9 /* FMDatabasePool.m in Sources */,
+				A442DAA01AD3F5E200724EF9 /* AccountModel.swift in Sources */,
+				A442DAA21AD3F96100724EF9 /* InOutTypeModel.swift in Sources */,
 				A4AA8D521AD25929003F964E /* AppDelegate.swift in Sources */,
+				A442DAA41AD404DB00724EF9 /* InOutModel.swift in Sources */,
 				A442DA971AD25D2800724EF9 /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
