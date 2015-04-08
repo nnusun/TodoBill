@@ -11,19 +11,23 @@ import Foundation
 class Expenditure: NSObject{
     var money: Double
     var picture: String
-    var type_uuid: String
-    var account_uuid: String
+    var type_first_uuid: String
+    var type_second_uuid: String
+    var account_first_uuid: String
+    var account_second_uuid: String
     var date: NSDate
     var member: String
     var project: String
     var location: String
     var mark: String
     
-    init(money: Double, picture: String, type_uuid: String, account_uuid: String, date: NSDate, member: String, project: String, location: String, mark: String){
+    init(money: Double, picture: String, type_first_uuid: String, type_second_uuid: String, account_first_uuid: String, account_second_uuid: String, date: NSDate, member: String, project: String, location: String, mark: String){
         self.money = money
         self.picture = picture
-        self.type_uuid = type_uuid
-        self.account_uuid = account_uuid
+        self.type_first_uuid = type_first_uuid
+        self.type_second_uuid = type_second_uuid
+        self.account_first_uuid = account_first_uuid
+        self.account_second_uuid = account_second_uuid
         self.date = date
         self.member = member
         self.project = project
@@ -35,19 +39,23 @@ class Expenditure: NSObject{
 class Income: NSObject{
     var money: Double
     var picture: String
-    var type_uuid: String
-    var account_uuid: String
+    var type_first_uuid: String
+    var type_second_uuid: String
+    var account_first_uuid: String
+    var account_second_uuid: String
     var date: NSDate
     var member: String
     var project: String
     var location: String
     var mark: String
     
-    init(money: Double, picture: String, type_uuid: String, account_uuid: String, date: NSDate, member: String, project: String, location: String, mark: String){
+    init(money: Double, picture: String, type_first_uuid: String, type_second_uuid: String, account_first_uuid: String, account_second_uuid: String, date: NSDate, member: String, project: String, location: String, mark: String){
         self.money = money
         self.picture = picture
-        self.type_uuid = type_uuid
-        self.account_uuid = account_uuid
+        self.type_first_uuid = type_first_uuid
+        self.type_second_uuid = type_second_uuid
+        self.account_first_uuid = account_first_uuid
+        self.account_second_uuid = account_second_uuid
         self.date = date
         self.member = member
         self.project = project

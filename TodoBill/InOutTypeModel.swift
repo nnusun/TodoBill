@@ -16,7 +16,7 @@ class InOutTypeModel: NSObject {
     var income: Bool
     var secondClass: [InOutTypeSecondClassModel]
     
-    init(uuid: String, name: String, picture: String, secondClass: [InOutTypeSecondClassModel], income: Bool){
+    init(uuid: String, name: String, picutre: String, secondClass: [InOutTypeSecondClassModel], income: Bool){
         self.uuid = uuid
         self.name = name
         self.picutre = picutre
